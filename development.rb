@@ -1,3 +1,4 @@
+# the config file in /config/enviroments/
 Rails.application.configure do
 	.
 	.
