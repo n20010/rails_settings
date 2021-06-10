@@ -7,5 +7,12 @@ This repository has many convenient settings for rails development.
 
 
 ## Git settings
+```bash:Terminal
 $ git config --global credential.helper "cache --timeout=86400"
+```
 
+## convenient sources
+```bash:Terminal
+curl -O app/assets/images/rails.svg -OL https://cdn.learnenough.com/rails.svg
+```
+[![Rails Picture](/rails.svg)]
