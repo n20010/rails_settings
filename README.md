@@ -15,4 +15,4 @@ $ git config --global credential.helper "cache --timeout=86400"
 ```bash:Terminal
 curl -O app/assets/images/rails.svg -OL https://cdn.learnenough.com/rails.svg
 ```
-[![Rails Picture](/rails.svg)]
+![Rails Picture](/rails.svg)
