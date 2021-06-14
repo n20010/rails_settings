@@ -7,6 +7,7 @@ This repository has many convenient settings for rails development.
 
 
 ## Git settings
+- Your enviroment  keep your git accounts data one day
 ```console:Terminal
 $ git config --global credential.helper "cache --timeout=86400"
 ```
@@ -19,6 +20,7 @@ $ curl -O app/assets/images/rails.svg -OL https://cdn.learnenough.com/rails.svg
 ![Rails Picture](/rails.svg)
 
 ## DB Browser for SQLite
+- You can see your database models better to see
 ```console:Terminal
 $ sudo apt install sqlitebrowser
 ```
@@ -26,7 +28,18 @@ $ sudo apt install sqlitebrowser
 ## others
 
 YAML format
+- You can see the data in YAML format
 ```console:Terminal
 <model>.attributes.to_yaml 
 y <model>.attributes
+```
+
+debugger
+- You can use the debug console in server running terminal
+- This feature has need byebug gem
+```console:Terminal
+def <action_name>
+    <action>
+    debugger
+end
 ```
