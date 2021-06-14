@@ -22,3 +22,11 @@ $ curl -O app/assets/images/rails.svg -OL https://cdn.learnenough.com/rails.svg
 ```console:Terminal
 $ sudo apt install sqlitebrowser
 ```
+
+## others
+
+YAML format
+```console:Terminal
+<model>.attributes.to_yaml 
+y <model>.attributes
+```
