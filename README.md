@@ -17,3 +17,8 @@ Rails Picture
 $ curl -O app/assets/images/rails.svg -OL https://cdn.learnenough.com/rails.svg
 ```
 ![Rails Picture](/rails.svg)
+
+## DB Browser for SQLite
+```console:Terminal
+$ sudo apt install sqlitebrowser
+```
