@@ -24,7 +24,6 @@ TWITTER_ACCESS_TOKEN_SECRET=取得したキーを入れてください
 ### 環境変数を定義するためのファイルを生成
 
 ```
-$ bundle install
 $ bundle exec rails g config:install
 ```
 ### settings.ymlの編集
