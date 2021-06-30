@@ -6,6 +6,7 @@ Gemfileに　`gem 'dotenv-rails'`を記載し`bundle`
 
 ``` :Gemfile
 gem 'dotenv-rails'
+gem 'config'
 ```
 
 ```
@@ -19,9 +20,16 @@ TWITTER_CONSUMER_SECRET=取得したキーを入れてください
 TWITTER_ACCESS_TOKEN=取得したキーを入れてください
 TWITTER_ACCESS_TOKEN_SECRET=取得したキーを入れてください
 ```
+
+### 環境変数を定義するためのファイルを生成
+
+```
+$ bundle install
+$ bundle exec rails g config:install
+```
 ### settings.ymlの編集
 
-``` settings.yml
+```:config/settings.yml
 twitter_api:
   consumer_key: <%= ENV['TWITTER_CONSUMER_KEY'] %>
   consumer_secret: <%= ENV['TWITTER_CONSUMER_SECRET'] %>
