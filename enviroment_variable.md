@@ -28,3 +28,17 @@ twitter_api:
   access_token: <%= ENV['TWITTER_ACCESS_TOKEN'] %>
   access_token_secret: <%= ENV['TWITTER_ACCESS_TOKEN_SECRET'] %>
 ```
+
+
+``` controller
+  before_aciton :twitterClient
+  
+  def twitterClient
+    @twitterClient ||= Twitter::REST::Client.new do |config|
+      config.consumer_key = Settings.twitter_api.consumer_key
+      config.consumer_secret = Settings.twitter_api.consumer_secret
+      config.access_token = Settings.twitter_api.access_token
+      config.access_token_secret = Settings.twitter_api.access_token_secret
+    end
+  end
+```
