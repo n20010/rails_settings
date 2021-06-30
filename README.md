@@ -34,6 +34,13 @@ YAML format
 y <model>.attributes
 ```
 
+Cloud9
+- You can open yor file in Cloud9's Terminal
+```console:Terminal
+$ npm install -g c9
+$ c9 <file name>
+```
+
 debugger
 - You can use the debug console in server running terminal
 - This feature has need byebug gem
